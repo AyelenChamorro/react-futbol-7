@@ -1,22 +1,21 @@
-import React from "react";
-import "../Navbar/Navbar.scss";
+import React from 'react';
+import '../Navbar/Navbar.scss';
+import { DropDownHover } from './DropDownHover/DropDownHover';
+import useNavbar from './useNavbar';
 
 function Navbar() {
+  const links = useNavbar();
+
   return (
-    <div className="navbar d-flex justify-content-end">
-      <ul className="navbar-menu d-flex justify-content-around ">
-        <li>
-          <a>F7 NIGTH</a>{" "}
-        </li>
-        <li>
-          {" "}
-          <a>F7 SABADOS</a>
-        </li>
-        <li>
-          {" "}
-          <a className="la-liga">LA LIGA</a>
-        </li>
-      </ul>
+    <div className="navbar ">
+      {links.map((link, key) => (
+        <DropDownHover
+          name={link.name}
+          links={link.links}
+          key={key}
+          linkKey={link.name}
+        />
+      ))}
     </div>
   );
 }

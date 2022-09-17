@@ -1,15 +1,12 @@
 import React from 'react';
-import bgimagen from '../../imagenes/canchas-f7.jpg';
-import "./BgImagen.scss";
+import bgimage from '../../imagenes/canchas-f7.jpg';
 
-function BgImagen() {
+import './BgImagen.scss';
+
+export const BgImagen = () => {
   return (
     <div>
-        <img className="bgimagen" src={bgimagen}>
-
-        </img>
+      <img className="bgimagen" src={bgimage} alt="" />
     </div>
-  )
-}
-
-export default BgImagen
+  );
+};

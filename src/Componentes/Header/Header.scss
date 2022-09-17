@@ -1,26 +1,21 @@
-body{
-    
-    .container-header{
+body {
+    .container-header {
         max-width: 100%;
-        .bg-light-blue{
+        z-index: 10;
+        .bg-light-blue {
+            margin: 0;
             width: 100%;
             height: 40px;
-            background-color: #0BBAD9;
+            background-color: #0bbad9;
         }
-        .bg-blue{
-            width: 100%;
-            background-color: #004B7A;
-            .container-logo{
-                height: 60px;
-                .logo{
-                    width: 110px;
+        .bg-blue {
+            background-color: #004b7a;
+            .container-logo {
+                height: 110px;
+                .logo {
                     height: 110px;
                 }
             }
         }
-       
-      
-      
     }
-
 }

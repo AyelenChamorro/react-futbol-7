@@ -1,21 +1,20 @@
-body{
-    .navbar{
-       
-        .navbar-menu{
-            .la-liga{
-                margin-right: 30px;
-                text-decoration: none;
+@import "../../styles/variables";
+
+body {
+    .navbar {
+        #dropdown-autoclose-outside {
+            font-size: 16px;
+            color: $white;
+            border: none;
+            background-color: $blue;
+        }
+        .menu {
+            background-color: #0bbad9;
+
+            a {
+                color: $white;
+                border-bottom: 1px solid $white;
             }
-            width: 28rem;
-          
-            list-style: none;
-            a{
-             
-                letter-spacing: inherit;
-                font-size: 16px;
-                color: white;
-            }
-            
         }
     }
 }
