@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="row bg-blue">
         <div className="col-2 container-logo d-flex align-items-center justify-content-center">
           {/* <img className="logo" src={logo} alt="" /> */}
-          <h2>Pepa F8</h2>
+          <h2>React Fútbol 7</h2>
         </div>
         <div className="col d-flex justify-content-start">
           <Navbar />
